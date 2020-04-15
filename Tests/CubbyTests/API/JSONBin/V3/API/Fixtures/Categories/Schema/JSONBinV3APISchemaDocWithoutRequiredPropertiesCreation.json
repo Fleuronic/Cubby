@@ -1,0 +1,19 @@
+{
+	"record": {
+		"title": "Site",
+		"properties": {
+			"httpURLString": {
+				"type": "string"
+			},
+			"httpsURLString": {
+				"type": "string"
+			}
+		},
+		"type": "object"
+	},
+	"metadata": {
+		"id": "<SCHEMA_DOC_ID>",
+		"createdAt": "1970-1-1T00:00:00.000Z",
+		"name": "Site"
+	}
+}

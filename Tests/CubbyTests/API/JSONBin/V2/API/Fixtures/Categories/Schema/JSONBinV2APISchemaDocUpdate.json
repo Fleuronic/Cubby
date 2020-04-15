@@ -1,0 +1,32 @@
+{
+	"success": true,
+	"data": {
+		"title": "User",
+		"properties": {
+			"username": {
+				"type": "string"
+			},
+			"password": {
+				"type": "null"
+			},
+			"isLoggedIn": {
+				"type": "boolean"
+			},
+			"previousUsernames": {
+				"type": "array"
+			},
+			"highScore": {
+				"type": "number"
+			}
+		},
+		"type": "object",
+		"required": [
+			"username",
+			"password",
+			"isLoggedIn",
+			"previousUsernames",
+			"highScore"
+		]
+	},
+	"id": "<SCHEMA_DOC_ID>"
+}

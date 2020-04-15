@@ -1,0 +1,9 @@
+{
+	"success": true,
+	"data": {
+		"name": "Vaibhav",
+		"age": 31
+	},
+	"parentId": "<BIN_ID>",
+	"version": 1
+}

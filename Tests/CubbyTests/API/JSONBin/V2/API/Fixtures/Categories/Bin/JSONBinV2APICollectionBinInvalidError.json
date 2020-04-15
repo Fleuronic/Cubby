@@ -1,0 +1,6 @@
+{
+	"message": "Schema Doc Validation Mismatch:  Should have required property 'username'",
+	"schemaDocID": "<SCHEMA_DOC_ID>",
+	"schemaDocName": "User",
+	"success": false
+}

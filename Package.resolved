@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AnyCodable",
+        "repositoryURL": "https://github.com/Flight-School/AnyCodable",
+        "state": {
+          "branch": null,
+          "revision": "b1a7a8a6186f2fcb28f7bda67cfc545de48b3c80",
+          "version": "0.6.2"
+        }
+      },
+      {
+        "package": "AsyncOptional",
+        "repositoryURL": "https://github.com/Fleuronic/AsyncOptional",
+        "state": {
+          "branch": null,
+          "revision": "e946127826dee51e6ca9505987491c3e18b9b204",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "Emissary",
+        "repositoryURL": "https://github.com/Fleuronic/Emissary",
+        "state": {
+          "branch": null,
+          "revision": "1776c057909022e2119c28f1e38becce17aabff1",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "Identity",
+        "repositoryURL": "https://github.com/JohnSundell/Identity",
+        "state": {
+          "branch": null,
+          "revision": "c3c9102e8d5c2cfcc44a8c7c4bbb7cf3f7c12be9",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "Skewer",
+        "repositoryURL": "https://github.com/Fleuronic/Skewer",
+        "state": {
+          "branch": null,
+          "revision": "edaad0055f287eb1c76b53712ea0af231881e8cf",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "IPAddress",
+        "repositoryURL": "https://github.com/Fleuronic/SwiftIPAddress",
+        "state": {
+          "branch": "xcode13",
+          "revision": "6f0c96bf4ea6cb9dde872675e09793e05b714363",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

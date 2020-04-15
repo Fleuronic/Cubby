@@ -1,0 +1,1229 @@
+[
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIPrivateBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"private": true
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIPrivateBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"private": false
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIPublicBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"name": "Vaibhav"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APINamedBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"collection-id": "<COLLECTION_ID>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APICollectionBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"collection-id": "<USERS_COLLECTION_ID>"
+			},
+			"body": {
+				"username": "vaibhav",
+				"isLoggedIn": true,
+				"previousUsernames": ["_vaibhav", "vaibhav1"],
+				"highScore": 96.2
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIValidCollectionBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"collection-id": "<USERS_COLLECTION_ID>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APICollectionBinInvalidError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIBinCreationUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIBinCreationUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIEmptyRecordError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"collection-id": "<INVALID_COLLECTION_ID>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidCollectionIDError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"name": "Vvvvvvvvvvvvvvvaaaaaaaaaaaaaaaaaiiiiiiiiiiiiiiiiiiiiibbbbbbbbbbbbbbbbbbbbhhhhhhhhhhhhhhhhhhhaaaaaaaaaaaaaaaaaaaaavvvvvvvvvvvvvvvv"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIBinCreationNameTooLongError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<PUBLIC_BIN_ID>"
+		},
+		"statusCode": 200,
+		"response": "Person"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "Person"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>/1",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "PersonNumberedVersion"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>/latest",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "PersonLatestVersion"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<PRIVATE_BIN_ID>"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIPrivateBinReadUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"secret-key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<MISSING_BIN_ID>"
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>/2"
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APIBinVersionNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/b/<INVALID_BIN_ID>"
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIPrivateBinUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<PUBLIC_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIPublicBinUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"versioning": true
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIBinUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"versioning": false
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIBinUpdateUnversioned"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<USER_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APICollectionBinInvalidError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIPrivateBinUpdateUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<MISSING_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<INVALID_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIEmptyRecordError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIBinDeletion"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIBinDeletionUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/b/<BIN_ID>",
+			"headers": {
+				"secret-key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/b/<MISSING_BIN_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/b/<INVALID_BIN_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/c",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "People"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APICollectionCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/c",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "People"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APICollectionCreationUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/c",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"name": "People"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/c",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": ""
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APICollectionEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/c",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "P"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APICollectionNameInvalidLengthError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Persons"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APICollectionNameUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<USERS_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"schema-doc-id": "<SCHEMA_DOC_ID>"
+			},
+			"body": {}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APICollectionSchemaDocAddition"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<USERS_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"remove-schema-doc": true
+			},
+			"body": {}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APICollectionSchemaDocRemoval"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Persons"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APICollectionUpdateUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"name": "Persons"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<USERS_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"schema-doc-id": "<MISSING_SCHEMA_DOC_ID>"
+			},
+			"body": {}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<MISSING_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Persons"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APICollectionNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<INVALID_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Persons"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidCollectionIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<USERS_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"schema-doc-id": "<INVALID_SCHEMA_DOC_ID>"
+			},
+			"body": {}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APICollectionUpdateInvalidSchemaDocIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<USERS_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": ""
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APICollectionEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/c/<USERS_COLLECTION_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "P"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APICollectionNameInvalidLengthError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/e/requests",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIRequestCount"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/e/requests"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIRequestCountUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/e/requests",
+			"headers": {
+				"secret-key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/g/141.158.45.225"
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIGeoIPv4Lookup"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/g/2600::"
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APIGeoIPv6Lookup"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/g/192.168.1.1"
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APIGeoIPLookupNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/g/<INVALID_IP_ADDRESS>"
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIGeoIPLookupInvalidAddressError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"name": "Person"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APISchemaDocCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"name": "Person"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APISchemaDocCreationUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<INVALID_SECRET_KEY>",
+				"name": "Person"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"name": ""
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APISchemaDocEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>",
+				"name": "P"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APISchemaDocNameInvalidLengthError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "Schema"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/s/<SCHEMA_DOC_ID>"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APISchemaDocReadUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"secret-key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/s/<MISSING_SCHEMA_DOC_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/s/<INVALID_SCHEMA_DOC_ID>",
+			"headers": {
+				"secret-key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidSchemaDocIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV2APISchemaDocUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APISchemaDocUpdateUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV2APIInvalidSecretKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/s/<MISSING_SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV2APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/s/<INVALID_SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"secret-key": "<SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV2APIInvalidSchemaDocIDError"
+	}
+]

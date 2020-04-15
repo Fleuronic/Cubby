@@ -1,0 +1,1605 @@
+[
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPrivateBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Private": true
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPrivateBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Private": false
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPublicBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Name": "Vaibhav"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APINamedBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Id": "<COLLECTION_ID>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Id": "<USERS_COLLECTION_ID>"
+			},
+			"body": {
+				"username": "vaibhav",
+				"isLoggedIn": true,
+				"previousUsernames": ["_vaibhav", "vaibhav1"],
+				"highScore": 96.2
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIValidCollectionBinCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Id": "<USERS_COLLECTION_ID>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APICollectionBinInvalidError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Name": ""
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIBinCreationEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIBinEmptyError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Id": "<INVALID_COLLECTION_ID>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIInvalidCollectionIDError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Name": "Vvvvvvvvvvvvvvvaaaaaaaaaaaaaaaaaiiiiiiiiiiiiiiiiiiiiibbbbbbbbbbbbbbbbbbbbhhhhhhhhhhhhhhhhhhhaaaaaaaaaaaaaaaaaaaaavvvvvvvvvvvvvvvv"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIBinCreationNameTooLongError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/b",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 30
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPrivateBinRead"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PUBLIC_BIN_ID>"
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPublicBinRead"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Meta": false
+			}
+		},
+		"statusCode": 200,
+		"response": "Person"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PUBLIC_BIN_ID>",
+			"headers": {
+				"X-Bin-Meta": false
+			}
+		},
+		"statusCode": 200,
+		"response": "Person"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<COLLECTION_BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionBinRead"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Dot-Path": "name"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinReadDotPath"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Meta": false,
+				"X-Dot-Path": "name"
+			}
+		},
+		"statusCode": 200,
+		"response": "Name"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/1",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinReadNumberedVersion"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/latest",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinReadLatestVersion"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<INVALID_BIN_ID>"
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIPrivateBinReadUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIBinInvalidAuthorizationError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<MISSING_BIN_ID>"
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/2"
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIBinVersionNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>/versions/count",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPrivateBinVersionCount"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PUBLIC_BIN_ID>/versions/count"
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPublicBinVersionCount"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>/versions/count"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIPrivateBinVersionCountUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>/versions/count",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIBinInvalidAuthorizationError"
+	},	
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/b/<MISSING_BIN_ID>/versions/count",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPrivateBinUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<PUBLIC_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIPublicBinUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Versioning": true
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Versioning": false
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinUpdateUnversioned"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Name": "Jordan"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinNameUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/meta/privacy",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Bin-Private": false
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinPrivacyUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<USER_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APICollectionBinInvalidError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<INVALID_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIBinEmptyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIPrivateBinUpdateUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<PRIVATE_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIBinInvalidAuthorizationError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/b/<MISSING_BIN_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"name": "Vaibhav",
+				"age": 31
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinDeletion"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<INVALID_BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<MISSING_BIN_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinVersionsDeletion"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Preserve-Latest": true
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinAllButLatestVersionsDeletion"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Preserve-Latest": false
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinVersionsDeletion"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<UNVERSIONED_BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIBinVersionsNotFoundDeletion"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<INVALID_BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APIInvalidRecordIDError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/versions"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "DELETE",
+			"url": "https://api.jsonbin.io/v3/b/<MISSING_BIN_ID>/versions",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIBinNotFoundError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/c",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": "People"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/c",
+			"headers": {
+				"X-Collection-Name": "People"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/c",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>",
+				"X-Collection-Name": "People"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/c",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": ""
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APICollectionEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/c",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": "Ppppeeeoooooooppppppppllllllllleeeeee"
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APICollectionNameInvalidLengthError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/<USERS_COLLECTION_ID>/bins",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionBinFetchResults"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/<USERS_COLLECTION_ID>/bins",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Sort-Order": "ascending"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionBinFetchResultsSorted"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/uncategorized/bins",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionUncategorizedBinFetchResults"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/uncategorized/bins",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Sort-Order": "ascending"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionUncategorizedBinFetchResultsSorted"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/bins"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/bins",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/uncategorized/bins"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/c/uncategorized/bins",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": "Persons"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionNameUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<USERS_COLLECTION_ID>/schemadoc/add",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Id": "<SCHEMA_DOC_ID>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionSchemaDocAddition"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<USERS_COLLECTION_ID>/schemadoc/remove",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APICollectionSchemaDocRemoval"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Collection-Name": "Persons"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>",
+				"X-Collection-Name": "Persons"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<USERS_COLLECTION_ID>/schemadoc/add",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Id": "<MISSING_SCHEMA_DOC_ID>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<MISSING_COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": "Persons"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APICollectionNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<MISSING_COLLECTION_ID>/schemadoc/add",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Id": "<SCHEMA_DOC_ID>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APICollectionNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<MISSING_COLLECTION_ID>/schemadoc/remove",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APICollectionNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<INVALID_COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": "Persons"
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIInvalidCollectionIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<USERS_COLLECTION_ID>/schemadoc/add",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Id": "<INVALID_SCHEMA_DOC_ID>"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APICollectionUpdateInvalidSchemaDocIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Collection-Name": ""
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APICollectionEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/c/<COLLECTION_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>", 
+				"X-Collection-Name": "Ppppeeeoooooooppppppppllllllllleeeeee"
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APICollectionNameInvalidLengthError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIUsageLogList"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l/01-01-1970",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APIUsageLogData"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l/01-01-1970"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l/01-01-1970",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/l/01-01-1969",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APIUsageLogNotFoundError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": "Person"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APISchemaDocCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": "Site"
+			},
+			"body": {
+				"title": "Site",
+				"properties": {
+					"httpURLString": {
+						"type": "string"
+					},
+					"httpsURLString": {
+						"type": "string"
+					}
+				},
+				"type": "object"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APISchemaDocWithoutRequiredPropertiesCreation"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Schema-Doc-Name": "Person"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<INVALID_SECRET_KEY>",
+				"X-Schema-Doc-Name": "Person"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": ""
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APISchemaDocEmptyNameError"
+	},
+	{
+		"request": {
+			"method": "POST",
+			"url": "https://api.jsonbin.io/v3/s",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": "Ppppeeerrrrrsssssssooooooonnnnnnn"
+			},
+			"body": {
+				"$id": "http://example.com/person.schema.json",
+				"$schema": "http://json-schema.org/draft-07/schema#",
+				"title": "Person",
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"nickname": {
+						"type": "string"
+					},
+					"age": {
+						"type": "integer"
+					}
+				},
+				"type": "object",
+				"description": "A person object.",
+				"required": [
+					"name",
+					"age"
+				]
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APISchemaDocNameInvalidLengthError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APISchemaDocRead"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>"
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/s/<MISSING_SCHEMA_DOC_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "GET",
+			"url": "https://api.jsonbin.io/v3/s/<INVALID_SCHEMA_DOC_ID>",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>"
+			}
+		},
+		"statusCode": 400,
+		"response": "JSONBinV3APIInvalidSchemaDocIDError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APISchemaDocUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<INVALID_SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<MISSING_SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<INVALID_SCHEMA_DOC_ID>",
+			"headers": {
+				"Content-Type": "application/json",
+				"X-Master-Key": "<SECRET_KEY>"
+			},
+			"body": {
+				"title": "User",
+				"properties": {
+					"username": {
+						"type": "string"
+					},
+					"password": {
+						"type": "null"
+					},
+					"isLoggedIn": {
+						"type": "boolean"
+					},
+					"previousUsernames": {
+						"type": "array"
+					},
+					"highScore": {
+						"type": "number"
+					}
+				},
+				"type": "object",
+				"required": [
+					"username",
+					"password",
+					"isLoggedIn",
+					"previousUsernames",
+					"highScore"
+				]
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APIInvalidSchemaDocIDError"
+	},
+{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": "User Schema"
+			}
+		},
+		"statusCode": 200,
+		"response": "JSONBinV3APISchemaDocNameUpdate"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>/meta/name",
+			"headers": {
+				"X-Schema-Doc-Name": "User Schema"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIUnauthenticatedError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<SCHEMA_DOC_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<INVALID_SECRET_KEY>",
+				"X-Schema-Doc-Name": "User Schema"
+			}
+		},
+		"statusCode": 401,
+		"response": "JSONBinV3APIInvalidMasterKeyError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<MISSING_SCHEMA_DOC_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": "User Schema"
+			}
+		},
+		"statusCode": 404,
+		"response": "JSONBinV3APISchemaDocNotFoundError"
+	},
+	{
+		"request": {
+			"method": "PUT",
+			"url": "https://api.jsonbin.io/v3/s/<INVALID_SCHEMA_DOC_ID>/meta/name",
+			"headers": {
+				"X-Master-Key": "<SECRET_KEY>",
+				"X-Schema-Doc-Name": "User Schema"
+			}
+		},
+		"statusCode": 422,
+		"response": "JSONBinV3APIInvalidSchemaDocIDError"
+	}
+]

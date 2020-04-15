@@ -1,0 +1,13 @@
+{
+	"success": true,
+	"data": {
+		"username": "vaibhav",
+		"password": null,
+		"isLoggedIn": true,
+		"previousUsernames": ["_vaibhav", "vaibhav1"],
+		"highScore": 96.20
+	},
+	"id": "<USER_BIN_ID>",
+	"private": true,
+	"collectionID": "<USERS_COLLECTION_ID>"
+}

@@ -1,0 +1,18 @@
+[
+	{
+		"private": true,
+		"snippetMeta": {
+			"name": "User 1"
+		},
+		"record": "<BIN_1_ID>",
+		"createdAt": "1970-1-1T00:00:00.000Z"
+	},
+	{
+		"private": true,
+		"snippetMeta": {
+			"name": "User 2"
+		},
+		"record": "<BIN_2_ID>",
+		"createdAt": "1970-1-1T00:00:00.000Z"
+	}
+]

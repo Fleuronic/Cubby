@@ -1,0 +1,33 @@
+{
+	"record": {
+		"title": "User",
+		"properties": {
+			"username": {
+				"type": "string"
+			},
+			"password": {
+				"type": "null"
+			},
+			"isLoggedIn": {
+				"type": "boolean"
+			},
+			"previousUsernames": {
+				"type": "array"
+			},
+			"highScore": {
+				"type": "number"
+			}
+		},
+		"type": "object",
+		"required": [
+			"username",
+			"password",
+			"isLoggedIn",
+			"previousUsernames",
+			"highScore"
+		]
+	},
+	"metadata": {
+		"id": "<SCHEMA_DOC_ID>"
+	}
+}

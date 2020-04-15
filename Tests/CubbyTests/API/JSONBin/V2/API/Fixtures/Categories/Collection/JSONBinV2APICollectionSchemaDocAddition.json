@@ -1,0 +1,11 @@
+{
+	"success": true,
+	"collectionID": "<USERS_COLLECTION_ID>",
+	"schemaDocID": "<SCHEMA_DOC_ID>",
+	"schemaDocDetails": {
+		"name": "Person"
+	},
+	"collectionDetails": {
+		"name": "People"
+	}
+}

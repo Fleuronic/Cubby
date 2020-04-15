@@ -1,0 +1,4 @@
+{
+	"message": "You need to pass a secret-key in the header to Create a Bin",
+	"success": false
+}

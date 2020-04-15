@@ -1,0 +1,11 @@
+{
+	"record": {
+		"name": "Vaibhav",
+		"age": 31
+	},
+	"metadata": {
+		"parentId": "<PUBLIC_BIN_ID>",
+		"private": false,
+		"version": 1
+	}
+}

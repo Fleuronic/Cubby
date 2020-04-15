@@ -1,0 +1,11 @@
+{
+	"record": {
+		"name": "Vaibhav",
+		"age": 31
+	},
+	"metadata": {
+		"id": "<BIN_ID>",
+		"private": true,
+		"createdAt": "1970-1-1T00:00:00.000Z"
+	}
+}

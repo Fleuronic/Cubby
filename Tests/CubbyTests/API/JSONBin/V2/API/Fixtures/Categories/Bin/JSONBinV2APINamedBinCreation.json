@@ -1,0 +1,10 @@
+{
+	"success": true,
+	"data": {
+		"name": "Vaibhav",
+		"age": 30
+	},
+	"id": "<BIN_ID>",
+	"private": true,
+	"binName": "Vaibhav"
+}

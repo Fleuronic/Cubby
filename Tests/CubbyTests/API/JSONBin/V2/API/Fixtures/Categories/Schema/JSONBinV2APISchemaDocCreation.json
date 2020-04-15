@@ -1,0 +1,26 @@
+{
+	"success": true,
+	"data": {
+		"$id": "http://example.com/person.schema.json",
+		"$schema": "http://json-schema.org/draft-07/schema#",
+		"title": "Person",
+		"properties": {
+			"name": {
+				"type": "string"
+			},
+			"nickname": {
+				"type": "string"
+			},
+			"age": {
+				"type": "integer"
+			}
+		},
+		"type": "object",
+		"description": "A person object.",
+		"required": [
+			"age",
+			"name"
+		]
+	},
+	"id": "<SCHEMA_DOC_ID>"
+}

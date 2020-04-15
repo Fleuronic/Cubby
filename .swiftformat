@@ -1,0 +1,12 @@
+--enable isEmpty
+
+--disable blankLinesAroundMark
+--disable hoistPatternLet
+--disable sortedImports
+--disable trailingCommas
+
+--decimalgrouping ignore
+--indent tab
+--nospaceoperators ...,..<
+--tabwidth 4
+--stripunusedargs closure-only

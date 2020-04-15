@@ -1,0 +1,21 @@
+{
+	"success": true,
+	"data": {
+		"range": [
+			2375953408,
+			2375953919
+		],
+		"country": "US",
+		"region": "PA",
+		"eu": "0",
+		"timezone": "America/New_York",
+		"city": "Philadelphia",
+		"ll": [
+			39.934,
+			-75.16
+		],
+		"metro": 504,
+		"area": 1
+	},
+	"searchedFor": "141.158.45.225"
+}

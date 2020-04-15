@@ -1,0 +1,18 @@
+{
+	"success": true,
+	"data": {
+		"range": [],
+		"country": "US",
+		"region": "",
+		"eu": "0",
+		"timezone": "America/Chicago",
+		"city": "",
+		"ll": [
+			37.751,
+			-97.822
+		],
+		"metro": 0,
+		"area": 100
+	},
+	"searchedFor": "2600::"
+}
