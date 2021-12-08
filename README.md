@@ -193,7 +193,7 @@ print(deletion.message) // "Bin deleted successfully"
 
 ### Collection
 
-Create, fetch bins from, or update collections that contain your Swift structs. To ensure a collection only contains structs of the same type, attach a schema document (see below) representing that type to the collection. Once attached, attempting to create a bin in a collection of a different type (i.e., one that cannot be validated by the schema) will fail.
+Create, fetch from, or update collections that contain your Swift structs. To ensure a collection only contains structs of the same type, attach a schema document (see below) representing that type to the collection. Once attached, attempting to create a bin in a collection of a different type (i.e., one that cannot be validated by the schema) will fail.
 
 ```swift
 public protocol JSONBinV2APICollectionSpec: JSONBinV2APISpec {
@@ -219,7 +219,7 @@ let request = api.createCollection(named: "WFH Companies")
 let creation = try await request.returnedResource
 let id = creation.metadata.id
 
-print(creation.metadata.name) // "Remote Companies"
+print(creation.metadata.name) // "WFH Companies"
 ```
 
 </details>
