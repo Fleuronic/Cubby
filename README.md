@@ -136,7 +136,7 @@ print(company) // Company(name: "Apple Computer", remoteWorkPolicy: .hybrid)
 let request = api.updateName(ofBinWith: id, toName: "Apple")
 let update = try await request.returnedResource
 
-print(update.resource) // Company(name: "Apple", remoteWorkPolicy: .disallowed)
+print(update.resource) // Company(name: "Apple", remoteWorkPolicy: .hybrid)
 ```
 
 </details>
