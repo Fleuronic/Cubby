@@ -39,7 +39,7 @@ Cubby provides full support for both v2 and v3 of the JSONBin API.
     - [X] Create
     - [X] Read
 - [X] Experimental
-      - [X] Request Count
+    - [X] Request Count
 - [X] Geolocation
     - [X] Lookup
 - [X] Schema Doc
