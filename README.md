@@ -4,17 +4,17 @@
 
 <div align="center">
     
-[![SwiftPM](https://img.shields.io/badge/SPM-macOS%20%7C%20iOS%20%7C%20watchOS%20%7C%20tvOS-success?logo=swift&color=orange)](https://swift.org)
-![Swift Version](https://img.shields.io/badge/swift-5.5-success?color=informational&logo=swift)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Fleuronic/Cubby)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Fleuronic/Cubby)
 
-![Version](https://img.shields.io/badge/version-1.0.0-success?color=yellow)
-![License](https://img.shields.io/github/license/Fleuronic/Cubby?color=blueviolet)
-![Issues](https://img.shields.io/github/issues/Fleuronic/Cubby?logo=github)
-![Downloads](https://img.shields.io/github/downloads/Fleuronic/Cubby/total)
+[![Version](https://img.shields.io/badge/version-1.0.0-success?color=informational)](https://github.com/Fleuronic/Cubby/releases/tag/1.0.0)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Fleuronic/Cubby/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/Fleuronic/Cubby?logo=github)](https://github.com/Fleuronic/Cubby/issues)
+[![Downloads](https://img.shields.io/github/downloads/Fleuronic/Cubby/total)](https://github.com/Fleuronic/Cubby/releases)
 
 [![Bitrise](https://app.bitrise.io/app/176b03ebf96e978e/status.svg?token=CMi7PpmIVLHq8_FbpsGVlA&branch=main)](https://app.bitrise.io/app/176b03ebf96e978e)
 [![Codecov](https://img.shields.io/codecov/c/github/Fleuronic/Cubby?logo=codecov)](https://codecov.io/gh/Fleuronic/Cubby)
-[![Codacy](https://img.shields.io/codacy/grade/ca1a60cc3c404d5d939a3dc2111cc12f?logo=codacy)](https://app.codacy.com/gh/Fleuronic/Cubby)
+[![Codacy](https://app.codacy.com/project/badge/Grade/ca1a60cc3c404d5d939a3dc2111cc12f)](https://www.codacy.com/gh/Fleuronic/Cubby/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fleuronic/Cubby&amp;utm_campaign=Badge_Grade)
 
 [![Tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fshields.io)](https://twitter.com/intent/tweet?text=Check%20out%20github.com/Fleuronic/Cubby%20from%20@Fleuronic%2C%20a%20Swift%20wrapper%20around%20the%20@JSONBin%20API.)
 [![Follow](https://img.shields.io/twitter/follow/Fleuronic?label=@Fleuronic)](https://twitter.com/intent/follow?screen_name=Fleuronic)
