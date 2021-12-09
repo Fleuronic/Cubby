@@ -12,7 +12,7 @@
 ![Issues](https://img.shields.io/github/issues/Fleuronic/Cubby?logo=github)
 ![Downloads](https://img.shields.io/github/downloads/Fleuronic/Cubby/total)
 
-[![Bitrise](https://img.shields.io/bitrise/176b03ebf96e978e?label=macOS&logo=bitrise&token=CMi7PpmIVLHq8_FbpsGVlA)](https://app.bitrise.io/app/176b03ebf96e978e)
+[![Bitrise](https://app.bitrise.io/app/176b03ebf96e978e/status.svg?token=CMi7PpmIVLHq8_FbpsGVlA&branch=main)](https://app.bitrise.io/app/176b03ebf96e978e)
 [![Codecov](https://img.shields.io/codecov/c/github/Fleuronic/Cubby?logo=codecov)](https://codecov.io/gh/Fleuronic/Cubby)
 [![Codacy](https://img.shields.io/codacy/grade/ca1a60cc3c404d5d939a3dc2111cc12f?logo=codacy)](https://app.codacy.com/gh/Fleuronic/Cubby)
 
