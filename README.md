@@ -106,13 +106,13 @@ public protocol JSONBinV3APIBinSpec: JSONBinV3APISpec {
 <summary>Creation Example</summary>
 
 ```swift
-var apple = Company(name: "Apple Computer", remoteWorkPolicy: .hybrid)
+var apple = Company(name: "Apple", remoteWorkPolicy: .hybrid)
 
-let request = api.createBin(named: "Apple", with: company)
+let request = api.createBin(named: "Apple Computer", with: company)
 let creation = try await request.returnedResource
 let id = creation.metadata.id
 
-print(creation.resource) // Company(name: "Apple Computer", remoteWorkPolicy: .hybrid)
+print(creation.resource) // Company(name: "Apple", remoteWorkPolicy: .hybrid)
 ```
 
 </details>
@@ -133,7 +133,7 @@ print(company) // Company(name: "Apple Computer", remoteWorkPolicy: .hybrid)
 <summary>Update Name Example</summary>
 
 ```swift
-let request = api.updateName(ofBinWith: id, toName: "Apple")
+let request = api.updateName(ofBinWith: id, toName: "Apple Inc.")
 let update = try await request.returnedResource
 
 print(update.resource) // Company(name: "Apple", remoteWorkPolicy: .hybrid)
