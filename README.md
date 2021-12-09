@@ -38,15 +38,15 @@ Cubby provides full support for both v2 and v3 of the JSONBin API.
 - [X] Collection
     - [X] Create
     - [X] Read
-- [X] Experimental
-    - [X] Request Count
-- [X] Geolocation
-    - [X] Lookup
 - [X] Schema Doc
     - [X] Create
     - [X] Read
     - [X] Update
-
+- [X] Geolocation
+    - [X] Lookup
+- [X] Experimental
+    - [X] Request Count
+    
 ### Version 3.0
 
 - [X] Bin
@@ -65,14 +65,14 @@ Cubby provides full support for both v2 and v3 of the JSONBin API.
     - [X] Update Name
     - [X] Add Schema Doc
     - [X] Remove Schema Doc
-- [X] Other
-    - [X] List Usage Logs
-    - [X] Download Usage Log
 - [X] Schema Doc
     - [X] Create
     - [X] Read
     - [X] Update
     - [X] Update Name
+- [X] Other
+    - [X] List Usage Logs
+    - [X] Download Usage Log
 
 ## Usage
 
@@ -130,24 +130,24 @@ print(company) // Company(name: "Apple Computer", remoteWorkPolicy: .hybrid)
 </details>
 
 <details>
-<summary>Update Name Example</summary>
-
-```swift
-let request = api.updateName(ofBinWith: id, toName: "Apple Inc.")
-let update = try await request.returnedResource
-
-print(update.resource) // Company(name: "Apple", remoteWorkPolicy: .hybrid)
-```
-
-</details>
-
-<details>
 <summary>Update Example</summary>
 
 ```swift
 apple.remoteWorkPolicy = .disallowed
 
 let request = api.updateBin(with: id, using: apple)
+let update = try await request.returnedResource
+
+print(update.resource) // Company(name: "Apple", remoteWorkPolicy: .disallowed)
+```
+
+</details>
+
+<details>
+<summary>Update Name Example</summary>
+
+```swift
+let request = api.updateName(ofBinWith: id, toName: "Apple Inc.")
 let update = try await request.returnedResource
 
 print(update.resource) // Company(name: "Apple", remoteWorkPolicy: .disallowed)
@@ -372,29 +372,7 @@ print(update.metadata.name) // "Company Schema Document"
 
 </details>
 
-### Experimental
-
-Get the number of requests remaining for this account.
-
-```swift
-public protocol JSONBinV2APIExperimentalSpec: JSONBinV2APISpec {
-    func requestCount() -> Request<Count>
-}
-```
-
-<details>
-<summary>Request Count Example</summary>
-
-```swift
-let request = api.requestCount()
-let count = try await request.returnedResource
-
-print(count.value) // 1000000
-```
-
-</details>
-
-### GeoIP
+### Geolocation
 
 Look up geolocation data for an IP address.
 
@@ -421,6 +399,28 @@ print(lookupData.coordinates.latitude) // 39.934
 print(lookupData.coordinates.longitude) // -75.16
 print(lookupData.metroCode) // 504
 print(lookupData.accuracyRadius) // 1
+```
+
+</details>
+
+### Experimental
+
+Get the number of requests remaining for this account.
+
+```swift
+public protocol JSONBinV2APIExperimentalSpec: JSONBinV2APISpec {
+    func requestCount() -> Request<Count>
+}
+```
+
+<details>
+<summary>Request Count Example</summary>
+
+```swift
+let request = api.requestCount()
+let count = try await request.returnedResource
+
+print(count.value) // 1000000
 ```
 
 </details>
