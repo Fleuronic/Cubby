@@ -4,7 +4,7 @@ import Foundation
 import CoreLocation
 
 public struct Geolocation {
-	public let range: Range<Int>?
+	public let range: Range<Int64>?
 	public let countryCode: String
 	public let regionCode: String
 	public let isEUCountry: Bool

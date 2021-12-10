@@ -12,7 +12,7 @@ extension Geolocation: Decodable {
 		let coordinateDegrees = try container.decode([CLLocationDegrees].self, forKey: .coordinateDegrees)
 		let metroCodeValue = try container.decode(Int.self, forKey: .metroCode)
 
-		range = try? container.decode(Range<Int>.self, forKey: .range)
+		range = try? container.decode(Range<Int64>.self, forKey: .range)
 		countryCode = try container.decode(String.self, forKey: .countryCode)
 		regionCode = try container.decode(String.self, forKey: .regionCode)
 		isEUCountry = (isEUCountryString == "1")
