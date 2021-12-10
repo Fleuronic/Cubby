@@ -3,9 +3,9 @@
 </p>
 
 <div align="center">
-    
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dswift-versions&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
+
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dplatforms&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dswift-versions&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
 
 [![Release](https://img.shields.io/github/v/release/Fleuronic/Cubby?cache-seconds=0)](https://github.com/Fleuronic/Cubby/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Fleuronic/Cubby/main/LICENSE)
