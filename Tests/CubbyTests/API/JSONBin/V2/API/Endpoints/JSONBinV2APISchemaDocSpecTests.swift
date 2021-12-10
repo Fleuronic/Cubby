@@ -3,6 +3,7 @@
 import XCTest
 import Cubby
 
+#if swift(>=5.5)
 @available(iOS 15, macOS 12, watchOS 8, tvOS 15, *)
 final class JSONBinV2APISchemaDocSpecTests: XCTestCase {
 	func testCreateSchemaDoc() async {
@@ -260,3 +261,4 @@ final class JSONBinV2APISchemaDocSpecTests: XCTestCase {
 		}
 	}
 }
+#endif

@@ -3,6 +3,7 @@
 import XCTest
 import Cubby
 
+#if swift(>=5.5)
 @available(iOS 15, macOS 12, watchOS 8, tvOS 15, *)
 final class JSONBinV3APIBinSpecTests: XCTestCase {
 	func testCreateBin() async {
@@ -915,3 +916,4 @@ final class JSONBinV3APIBinSpecTests: XCTestCase {
 		}
 	}
 }
+#endif
