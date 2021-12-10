@@ -50,9 +50,9 @@
         "package": "IPAddress",
         "repositoryURL": "https://github.com/Fleuronic/SwiftIPAddress",
         "state": {
-          "branch": "xcode13",
-          "revision": "6f0c96bf4ea6cb9dde872675e09793e05b714363",
-          "version": null
+          "branch": null,
+          "revision": "e181ed2c22cb562ed4675f978d533f56fae98c6d",
+          "version": "1.1.0"
         }
       }
     ]

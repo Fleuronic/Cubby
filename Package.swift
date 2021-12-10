@@ -21,7 +21,7 @@ let package = Package(
 		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.1.0"),
 		.package(url: "https://github.com/Fleuronic/Skewer", from: "1.1.0"),
 		.package(url: "https://github.com/JohnSundell/Identity", from: "0.1.0"),
-		.package(name: "IPAddress", url: "https://github.com/Fleuronic/SwiftIPAddress", .branch("xcode13"))
+		.package(name: "IPAddress", url: "https://github.com/Fleuronic/SwiftIPAddress", from: "1.1.0")
 	],
 	targets: [
 		.target(
