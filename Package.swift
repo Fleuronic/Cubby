@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.3
 // Copyright © Fleuronic LLC. All rights reserved.
 
 import PackageDescription
