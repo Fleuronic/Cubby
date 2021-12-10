@@ -4,6 +4,6 @@ import Foundation
 
 extension TimeZone: ExpressibleByStringLiteral {
 	public init(stringLiteral value: StringLiteralType) {
-		self = .init(identifier: value)!
+		self = TimeZone(identifier: value)!
 	}
 }

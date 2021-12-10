@@ -1,13 +1,13 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
 extension JSONBin.V3.API: JSONBinV3APISchemaDocSpec {
-	public func createSchemaDoc<Resource>(for type: Resource.Type, named name: String) -> Request<SchemaDoc.Response<Resource>> {
+	public func createSchemaDoc<Resource>(for type: Resource.Type, named name: String) -> Request<SchemaDocResponse<Resource>> {
 		let path = Cubby.SchemaDoc.path
 		let parameters = SchemaDoc.CreateParameters(name: name)
 		return post(Resource.schema, to: path, specifying: parameters)
 	}
 
-	public func readSchemaDoc<Resource>(with id: Cubby.SchemaDoc.ID, for type: Resource.Type) -> Request<SchemaDoc.Response<Resource>> {
+	public func readSchemaDoc<Resource>(with id: Cubby.SchemaDoc.ID, for type: Resource.Type) -> Request<SchemaDocResponse<Resource>> {
 		let path = Cubby.SchemaDoc.path(to: id)
 		return getResource(at: path)
 	}
