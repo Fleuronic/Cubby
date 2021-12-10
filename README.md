@@ -7,7 +7,7 @@
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/Fleuronic/Cubby)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/Fleuronic/Cubby)
 
-[![Version](https://img.shields.io/badge/version-1.0.0-success?color=informational)](https://github.com/Fleuronic/Cubby/releases/tag/1.0.0)
+[![Version](https://img.shields.io/badge/version-1.0.1-success?color=informational)](https://github.com/Fleuronic/Cubby/releases/tag/1.0.1)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Fleuronic/Cubby/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/Fleuronic/Cubby?logo=github)](https://github.com/Fleuronic/Cubby/issues)
 [![Downloads](https://img.shields.io/github/downloads/Fleuronic/Cubby/total)](https://github.com/Fleuronic/Cubby/releases)
