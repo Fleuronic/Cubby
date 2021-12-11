@@ -5,9 +5,6 @@ import CoreLocation
 import Cubby
 
 #if swift(>=5.5)
-	#if swift(<5.5.2)
-		@available(iOS 15, macOS 12, watchOS 8, tvOS 15, *)
-	#endif
 	final class JSONBinV2APIGeoIPSpecTests: XCTestCase {
 		func testLookUpGeolocationIPv4Address() async {
 			let api = JSONBin.V2.API()

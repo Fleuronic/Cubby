@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Fleuronic/AsyncOptional",
         "state": {
           "branch": null,
-          "revision": "35f80dc1b454f2fadef275b997c6af3b862ca0d3",
-          "version": "0.1.5"
+          "revision": "2a24038b33802e0553ac42c2953a4218752959e6",
+          "version": "0.1.6"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/Fleuronic/Emissary",
         "state": {
           "branch": null,
-          "revision": "afa3d2a4bd32e337cecebc6f165df0ebae4d3bc6",
-          "version": "0.1.3"
+          "revision": "407c58ed677606faa41c51527cfd894620873eb1",
+          "version": "0.1.4"
         }
       },
       {

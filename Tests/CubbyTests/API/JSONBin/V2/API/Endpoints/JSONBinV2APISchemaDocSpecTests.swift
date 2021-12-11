@@ -4,9 +4,6 @@ import XCTest
 import Cubby
 
 #if swift(>=5.5)
-	#if swift(<5.5.2)
-		@available(iOS 15, macOS 12, watchOS 8, tvOS 15, *)
-	#endif
 	final class JSONBinV2APISchemaDocSpecTests: XCTestCase {
 		func testCreateSchemaDoc() async {
 			let api = JSONBin.V2.API(secretKey: "<SECRET_KEY>")
