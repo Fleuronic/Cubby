@@ -6,6 +6,7 @@
 --disable trailingCommas
 
 --decimalgrouping ignore
+--ifdef outdent
 --indent tab
 --nospaceoperators ...,..<
 --tabwidth 4
