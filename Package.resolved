@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Fleuronic/AsyncOptional",
         "state": {
           "branch": null,
-          "revision": "2a24038b33802e0553ac42c2953a4218752959e6",
-          "version": "0.1.6"
+          "revision": "0671a112ce4473f8870b689feb8b826abcd47925",
+          "version": "0.1.9"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/Fleuronic/Emissary",
         "state": {
           "branch": null,
-          "revision": "6e034a961e4ffe00f9f32bd7d9a4e98a0c92304f",
-          "version": "0.1.6"
+          "revision": "6e683fa620d8738e9d773fcd28dad0e5ecf9d728",
+          "version": "0.1.11"
         }
       },
       {
@@ -42,17 +42,17 @@
         "repositoryURL": "https://github.com/Fleuronic/Skewer",
         "state": {
           "branch": null,
-          "revision": "edaad0055f287eb1c76b53712ea0af231881e8cf",
-          "version": "1.2.0"
+          "revision": "edf4693b7a7c365f9897c80dcf54ebd5187f873d",
+          "version": "1.2.1"
         }
       },
       {
         "package": "IPAddress",
         "repositoryURL": "https://github.com/Fleuronic/SwiftIPAddress",
         "state": {
-          "branch": null,
-          "revision": "e181ed2c22cb562ed4675f978d533f56fae98c6d",
-          "version": "1.1.0"
+          "branch": "master",
+          "revision": "ef8f666d9065f16244b530a4e71ef5528c1ce666",
+          "version": null
         }
       }
     ]

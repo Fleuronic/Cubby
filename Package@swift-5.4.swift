@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.4
 // Copyright © Fleuronic LLC. All rights reserved.
 
 import PackageDescription
@@ -21,7 +21,7 @@ let package = Package(
 		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.1.0"),
 		.package(url: "https://github.com/Fleuronic/Skewer", from: "1.1.0"),
 		.package(url: "https://github.com/JohnSundell/Identity", from: "0.1.0"),
-		.package(name: "IPAddress", url: "https://github.com/Fleuronic/SwiftIPAddress", .branch("master"))
+		.package(url: "https://github.com/Fleuronic/SwiftIPAddress", .branch("master"))
 	],
 	targets: [
 		.target(
@@ -31,15 +31,6 @@ let package = Package(
 				"Skewer",
 				"Identity",
 				"IPAddress"
-			]
-		),
-		.testTarget(
-			name: "CubbyTests",
-			dependencies: ["Cubby"],
-			resources: [
-				.process("API/JSONBin/V2/API/Fixtures"),
-				.process("API/JSONBin/V3/API/Fixtures"),
-				.process("Models/Fixtures")
 			]
 		)
 	]

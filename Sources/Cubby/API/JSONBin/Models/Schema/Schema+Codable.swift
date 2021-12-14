@@ -11,7 +11,7 @@ extension Schema: Codable {
 		try container.encodeIfPresent(title, forKey: .title)
 		try container.encodeIfPresent(description, forKey: .description)
 		try container.encodeIfPresent(type, forKey: .type)
-		try container.encodeIfPresent(requiredPropertyNames?.map(\.stringValue), forKey: .requiredPropertyNameValues)
+		try container.encodeIfPresent(requiredPropertyNames?.map { $0.stringValue }, forKey: .requiredPropertyNameValues)
 
 		var propertiesContainer = container.nestedContainer(keyedBy: Resource.CodingKeys.self, forKey: .properties)
 		try properties?.forEach { key, value in
@@ -59,7 +59,7 @@ private extension Schema {
 
 	var requiredPropertyNames: Set<Resource.CodingKeys>? {
 		properties.flatMap {
-			let names = Set($0.filter(\.1.isRequired).keys)
+			let names = Set($0.filter { $1.isRequired }.keys)
 			return names.isEmpty ? nil : names
 		}
 	}
