@@ -4,13 +4,14 @@
 
 <div align="center">
 
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dplatforms&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dswift-versions&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
-
 [![Release](https://img.shields.io/github/v/release/Fleuronic/Cubby?cache-seconds=0)](https://github.com/Fleuronic/Cubby/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Fleuronic/Cubby/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/Fleuronic/Cubby?logo=github&cache-seconds=0)](https://github.com/Fleuronic/Cubby/issues)
 [![Downloads](https://img.shields.io/github/downloads/Fleuronic/Cubby/total?cache-seconds=0)](https://github.com/Fleuronic/Cubby/releases)
+
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dplatforms&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
+
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FFleuronic%2FCubby%2Fbadge%3Ftype%3Dswift-versions&cache-seconds=0)](https://swiftpackageindex.com/Fleuronic/Cubby)
 
 [![Bitrise](https://app.bitrise.io/app/176b03ebf96e978e/status.svg?token=CMi7PpmIVLHq8_FbpsGVlA&branch=main)](https://app.bitrise.io/app/176b03ebf96e978e)
 [![Codecov](https://img.shields.io/codecov/c/github/Fleuronic/Cubby?logo=codecov&cache-seconds=0)](https://codecov.io/gh/Fleuronic/Cubby)
