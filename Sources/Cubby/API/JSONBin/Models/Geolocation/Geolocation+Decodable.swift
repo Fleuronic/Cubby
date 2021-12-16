@@ -1,7 +1,9 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
 import Foundation
+#if canImport(CoreLocation)
 import CoreLocation
+#endif
 
 extension Geolocation: Decodable {
 	// MARK: Decodable

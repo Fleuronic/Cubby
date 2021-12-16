@@ -1,7 +1,6 @@
 // Copyright © Fleuronic LLC. All rights reserved.
 
 import XCTest
-import CoreLocation
 import Cubby
 
 @available(iOS 15, macOS 12, watchOS 8, tvOS 15, *)
