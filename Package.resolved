@@ -11,21 +11,12 @@
         }
       },
       {
-        "package": "AsyncOptional",
-        "repositoryURL": "https://github.com/Fleuronic/AsyncOptional",
-        "state": {
-          "branch": null,
-          "revision": "24e47c24a42b6a8dfafdc5626823a3de53764485",
-          "version": "0.1.10"
-        }
-      },
-      {
         "package": "Emissary",
         "repositoryURL": "https://github.com/Fleuronic/Emissary",
         "state": {
           "branch": null,
-          "revision": "fde370791661660463d2765f3316a1d08af93ef1",
-          "version": "0.1.19"
+          "revision": "6113baa24cf747e1f9de5b401e42797a81e7c2ed",
+          "version": "0.3.1"
         }
       },
       {
@@ -42,8 +33,8 @@
         "repositoryURL": "https://github.com/Fleuronic/Skewer",
         "state": {
           "branch": null,
-          "revision": "edf4693b7a7c365f9897c80dcf54ebd5187f873d",
-          "version": "1.2.1"
+          "revision": "335106b6606d0b8cd65844b1578d89ee24a58e82",
+          "version": "3.0.0"
         }
       },
       {

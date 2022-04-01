@@ -18,8 +18,8 @@ let package = Package(
 		)
 	],
 	dependencies: [
-		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.1.0"),
-		.package(url: "https://github.com/Fleuronic/Skewer", from: "1.1.0"),
+		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.3.0"),
+		.package(url: "https://github.com/Fleuronic/Skewer", from: "3.0.0"),
 		.package(url: "https://github.com/JohnSundell/Identity", from: "0.1.0"),
 		.package(name: "IPAddress", url: "https://github.com/Fleuronic/SwiftIPAddress", .branch("master"))
 	],
