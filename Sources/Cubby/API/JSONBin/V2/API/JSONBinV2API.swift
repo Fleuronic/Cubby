@@ -39,7 +39,7 @@ extension JSONBin.V2.API: API {
 		.init(
 			keyDecodingStrategy: .useDefaultKeys,
 			keyEncodingStrategy: [
-				.parameters: .convertToKebabCase(componentTransform: .lowercase),
+				.parameters: .convertToKebabCase(using: .lowercase),
 				.payload: .useDefaultKeys
 			]
 		)

@@ -43,9 +43,14 @@ extension JSONBin.V3.API: API {
 		.init(
 			keyDecodingStrategy: .useDefaultKeys,
 			keyEncodingStrategy: [
-				.parameters: .convertToKebabCase(componentTransform: .capitalize(prefix: true)),
+				.parameters: .convertToKebabCase(using: .capitalize(prefix: .apiKeyPrefix)),
 				.payload: .useDefaultKeys
 			]
 		)
 	}
+}
+
+// MARK: -
+private extension String {
+	static let apiKeyPrefix = "X"
 }
