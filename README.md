@@ -77,7 +77,7 @@ Cubby provides full support for both v2 and v3 of the JSONBin API.
 
 ## Usage
 
-Cubby uses specification protocols to indicate which endpoints each API version supports. Use an appropriate instantiation of `JSONBin.V2.API` or `JSONBin.V3.API` depending on the endpoint you want to call. (Note that version 2 of the JSONBin API is planned for deprecation on February 28, 2022.)
+Cubby uses specification protocols to indicate which endpoints each API version supports. Use an appropriate instantiation of `JSONBin.V2.API` or `JSONBin.V3.API` depending on the endpoint you want to call. (Note that version 2 of the JSONBin API was planned for deprecation on February 28, 2022.)
 
 ### Bin
 
