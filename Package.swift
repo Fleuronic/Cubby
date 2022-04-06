@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.3
 // Copyright © Fleuronic LLC. All rights reserved.
 
 import PackageDescription
@@ -18,10 +18,10 @@ let package = Package(
 		)
 	],
 	dependencies: [
-		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.3.0"),
+		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.4.0"),
 		.package(url: "https://github.com/Fleuronic/Skewer", from: "3.0.0"),
 		.package(url: "https://github.com/JohnSundell/Identity", from: "0.1.0"),
-		.package(name: "IPAddress", url: "https://github.com/Fleuronic/SwiftIPAddress", .branch("master"))
+		.package(url: "https://github.com/vkill/SwiftIPAddress", .branch("master"))
 	],
 	targets: [
 		.target(
@@ -30,7 +30,7 @@ let package = Package(
 				"Emissary",
 				"Skewer",
 				"Identity",
-				"IPAddress"
+				.product(name: "IPAddress", package: "SwiftIPAddress")
 			]
 		),
 		.testTarget(

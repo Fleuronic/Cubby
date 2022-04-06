@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Fleuronic/Emissary",
         "state": {
           "branch": null,
-          "revision": "6113baa24cf747e1f9de5b401e42797a81e7c2ed",
-          "version": "0.3.1"
+          "revision": "5b6363863057c9b6d6a7e3c51e7f88ea82f97958",
+          "version": "0.4.1"
         }
       },
       {
@@ -39,7 +39,7 @@
       },
       {
         "package": "IPAddress",
-        "repositoryURL": "https://github.com/Fleuronic/SwiftIPAddress",
+        "repositoryURL": "https://github.com/vkill/SwiftIPAddress",
         "state": {
           "branch": "master",
           "revision": "ef8f666d9065f16244b530a4e71ef5528c1ce666",
