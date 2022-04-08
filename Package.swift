@@ -9,7 +9,7 @@ var targets: [Target] = [
 			"Emissary",
 			"Skewer",
 			"Identity",
-			.product(name: "IPAddress", package: "SwiftIPAddress")
+			"IPAddress"
 		]
 	)
 ]
@@ -46,7 +46,7 @@ let package = Package(
 		.package(url: "https://github.com/Fleuronic/Emissary", from: "0.4.0"),
 		.package(url: "https://github.com/Fleuronic/Skewer", from: "3.0.0"),
 		.package(url: "https://github.com/JohnSundell/Identity", from: "0.1.0"),
-		.package(url: "https://github.com/vkill/SwiftIPAddress", .branch("master"))
+		.package(name: "IPAddress", url: "https://github.com/vkill/SwiftIPAddress", .branch("master"))
 	],
 	targets: targets
 )
