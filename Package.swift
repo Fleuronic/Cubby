@@ -14,7 +14,7 @@ var targets: [Target] = [
 	)
 ]
 
-#if swift(>=5.4)
+#if swift(>=5.5)
 targets.append(
 	.testTarget(
 		name: "CubbyTests",
