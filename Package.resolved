@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/Flight-School/AnyCodable",
         "state": {
           "branch": null,
-          "revision": "b1a7a8a6186f2fcb28f7bda67cfc545de48b3c80",
-          "version": "0.6.2"
+          "revision": "22f302d4c048aafcda09a4ab5b8c0b03855316fb",
+          "version": "0.6.3"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Fleuronic/Emissary",
         "state": {
           "branch": null,
-          "revision": "5b6363863057c9b6d6a7e3c51e7f88ea82f97958",
-          "version": "0.4.1"
+          "revision": "212c9ba4f46fd5756eca4c889c662226e25511fe",
+          "version": "0.4.8"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/Fleuronic/Skewer",
         "state": {
           "branch": null,
-          "revision": "335106b6606d0b8cd65844b1578d89ee24a58e82",
-          "version": "3.0.0"
+          "revision": "05ade7f6e556ce1935c62f4f7b1fa43d0e29b957",
+          "version": "3.0.1"
         }
       },
       {
@@ -42,7 +42,7 @@
         "repositoryURL": "https://github.com/vkill/SwiftIPAddress",
         "state": {
           "branch": "master",
-          "revision": "ef8f666d9065f16244b530a4e71ef5528c1ce666",
+          "revision": "5d04aaa9b158d49c629be437a41598345cde9782",
           "version": null
         }
       }
