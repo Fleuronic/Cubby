@@ -109,7 +109,7 @@ public protocol JSONBinV3APIBinSpec: JSONBinV3APISpec {
 ```swift
 var apple = Company(name: "Apple", remoteWorkPolicy: .hybrid)
 
-let request = api.createBin(named: "Apple Computer", with: company)
+let request = api.createBin(named: "Apple Computer", with: apple)
 let creation = try await request.returnedResource
 let id = creation.metadata.id
 
