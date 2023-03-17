@@ -17,8 +17,6 @@
 [![Codecov](https://img.shields.io/codecov/c/github/Fleuronic/Cubby?logo=codecov&cache-seconds=0)](https://codecov.io/gh/Fleuronic/Cubby)
 [![Codacy](https://app.codacy.com/project/badge/Grade/ca1a60cc3c404d5d939a3dc2111cc12f?cache-seconds=0)](https://www.codacy.com/gh/Fleuronic/Cubby/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Fleuronic/Cubby&amp;utm_campaign=Badge_Grade)
 
-[![Tweet](https://img.shields.io/twitter/url?url=https%3A%2F%2Fshields.io)](https://twitter.com/intent/tweet?text=Check%20out%20github.com/Fleuronic/Cubby%20from%20@Fleuronic%2C%20a%20Swift%20wrapper%20around%20the%20@JSONBin%20API.)
-[![Follow](https://img.shields.io/twitter/follow/Fleuronic?label=@Fleuronic&cache-seconds=0)](https://twitter.com/intent/follow?screen_name=Fleuronic)
 [![Github](https://img.shields.io/github/followers/jordanekay?label=@jordanekay&style=social&cache-seconds=0)](https://github.com/jordanekay)
     
 </div>
